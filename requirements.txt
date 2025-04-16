@@ -3,7 +3,7 @@ pandas
 numpy
 matplotlib
 seaborn
-plotly
+plotly>=5.0.0
 altair
 networkx
 scikit-learn
@@ -19,6 +19,7 @@ hdbscan
 joblib
 wordcloud
 pyLDAvis
+prophet
 requests
 regex
 textblob
