@@ -1,103 +1,103 @@
-# 🧠 Mental Health Sentiment Analysis Dashboard
+# 🧠 MindScope: Mental Health Sentiment Analysis Dashboard
 
-A Streamlit dashboard that analyzes Twitter sentiment around mental health topics in real-time. This project uses the Twitter API, NLP models, and interactive visualizations to extract meaningful emotional insights from social media conversations.
+[![Streamlit App](https://img.shields.io/badge/Launch-Dashboard-brightgreen?style=flat&logo=streamlit)](https://mindscope-mental-health-dashboard.streamlit.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
----
-
-## 🌐 Live App
-[Click here to view the dashboard](https://mental-health-dashboard-eece5642.streamlit.app/)
+**MindScope** is a real-time sentiment analysis dashboard designed to track and visualize emotional discourse around mental health on social media. Built using Python, NLP, and interactive visualizations, the app offers powerful tools for policymakers, researchers, and mental health professionals to decode the emotional pulse of the internet.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
 
-### 🖥️ UI & Theming
-- Light/Dark mode toggle
-- Calming color palette for mental health context
-
-### 📊 Visualizations
-- Line graph of sentiment trends over time
-- Word clouds of tweet content
-- Sentiment distribution bar charts
-- Trending hashtags widget
-
-### 🔍 Interactivity
-- Enter any **hashtag** or **keyword** to view matching tweets
-- Display tweet summaries using extractive summarization (powered by Hugging Face Transformers)
-
-### 🔁 Real-time Data Collection
-- Fetch up to 100 tweets using Twitter API v2
-- Query customizable via command-line or future UI enhancements
+👉 [Launch Dashboard](https://mindscope-mental-health-dashboard.streamlit.app/)  
+👉 Try toggling between **Live Twitter Data** and the **Static Dataset** to explore various features.
 
 ---
 
-## 🛠️ Tech Stack
+## 🔍 Features
 
-| Tool | Purpose |
-|------|---------|
-| Python | Core language |
-| Streamlit | UI and dashboard framework |
-| Tweepy | Twitter API client |
-| Hugging Face Transformers | Summarization model |
-| TextBlob | Sentiment analysis |
-| Plotly & Matplotlib | Visualizations |
-| Pandas | Data manipulation |
-
----
-
-## 📂 Folder Structure
-```
-mental-health-dashboard/
-├── app.py                     # Main Streamlit application
-├── api.py                     # Twitter API integration
-├── sentiment_analysis.py      # Sentiment classification using TextBlob
-├── visualize.py               # Visual & analytics utilities
-├── data/                      # Contains collected tweet CSVs
-├── outputs/                   # Generated plots (optional)
-└── requirements.txt           # Required Python packages
-```
+- 📡 **Real-time Tweet Fetching** via Twitter API v2 (rate-limit aware)
+- 📁 **Static Dataset Toggle** for broader hashtag and emotion coverage
+- 💬 **Sentiment Analysis** using VADER and TextBlob
+- 😃 **Emotion Classification** with NRCLex (e.g., anger, joy, fear)
+- 📈 **Trend Visualization** over time and forecasting with ARIMA
+- 🔗 **Hashtag Co-occurrence Networks** (built with NetworkX)
+- 🧠 **Keyword Exploration & Word Clouds**
+- 📊 **Correlation Heatmaps**, Average Tweet Length, and Tweet Frequency
+- 🔍 **Compare Two Hashtags** over time for insight differentials
 
 ---
 
-## ✅ Setup Instructions
+## 📊 Visualizations
 
-1. **Clone this repository**
-```bash
-git clone https://github.com/KashS28/mental-health-dashboard.git
-cd mental-health-dashboard
-```
-
-2. **Install requirements**
-```bash
-pip install -r requirements.txt
-```
-
-3. **Add your Twitter API Bearer Token**
-Create a `.env` file:
-```
-BEARER_TOKEN=your_token_here
-```
-
-4. **Run the app**
-```bash
-streamlit run app.py
-```
+- **Sentiment Distribution** (Bar)
+- **Sentiment Over Time** (Line)
+- **Tweet Volume Forecast** (ARIMA)
+- **Hashtag Co-occurrence Network** (Graph)
+- **Emotion Distribution** (Pie & Bar)
+- **Correlation Heatmap** (Seaborn)
+- **Keyword Explorer & Word Cloud**
+- **Tweet Metadata Analysis**
 
 ---
 
-## 📈 Example Use Cases
-- Visualize public sentiment around mental health topics
-- Discover trending hashtags related to emotional well-being
-- Summarize how people feel about mental health over time
+## 📚 Tech Stack
+
+- **Frontend:** Streamlit
+- **Data Handling:** Pandas, NumPy
+- **NLP & Sentiment:** VADER, TextBlob, NRCLex, NLTK, SpaCy
+- **Visualization:** Plotly, Matplotlib, Seaborn, NetworkX
+- **APIs:** Tweepy (Twitter API v2)
+- **Forecasting:** Statsmodels (ARIMA)
 
 ---
 
-## 🙌 Acknowledgements
-- Built as part of **EECE 5642 – Data Visualization Final Project**
-- Twitter Developer Platform
-- Hugging Face Transformers
-- Streamlit Community
+## 📂 Project Structure
+
+📁 mindscope-mental-health-dashboard/ 
+├── app.py # Main Streamlit app 
+├── api.py # Twitter API integration 
+├── data/ # Static dataset (CSV) 
+├── modules/ # Preprocessing, visualization, analysis helpers 
+├── requirements.txt # Dependencies └── README.md # This file
+
 
 ---
 
-## 👩‍💻 Made with ❤️ by Kashish Shah
+## 📈 Use Cases
+
+- 🏛️ **Policy makers** can assess sentiment around public decisions.
+- 🧠 **Mental health NGOs** can tailor outreach strategies in real time.
+- 🔬 **Researchers** can study emotional trends and linguistic patterns.
+- 🚨 **Crisis teams** can act on sudden emotional spikes online.
+- 🧑‍💻 **Startups** can integrate sentiment tracking into wellness products.
+
+---
+
+## ⚠️ Limitations
+
+- Twitter API only returns **100 tweets per request**, so we use a **static dataset fallback** to enable full functionality.
+- Hashtag-specific insights may vary between real-time and historical data modes.
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/KashS28/mindscope-mental-health-dashboard.git
+   cd mindscope-mental-health-dashboard
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. (Optional) Add your Twitter API keys in api.py.
+
+4. Run the app:
+   ```bash
+   streamlit run app.py
+
+
+
+   
