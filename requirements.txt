@@ -19,6 +19,7 @@ joblib
 wordcloud
 textblob
 altair
+px
 spacy
 pyLDAvis
 requests
