@@ -4,9 +4,11 @@ numpy
 matplotlib
 seaborn
 plotly
+altair
 networkx
 scikit-learn
 nltk
+spacy
 vaderSentiment
 nrclex
 tweepy
@@ -14,13 +16,9 @@ bertopic
 sentence-transformers
 umap-learn
 hdbscan
-openai
 joblib
 wordcloud
-textblob
-altair
-px
-spacy
 pyLDAvis
 requests
 regex
+textblob
