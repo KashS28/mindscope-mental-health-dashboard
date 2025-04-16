@@ -23,6 +23,10 @@ from visualize import (
 from collections import Counter
 import re
 
+import warnings
+warnings.filterwarnings("ignore", category=SyntaxWarning)
+
+
 # ------------------- THEME + WIDTH -------------------
 
 mode = st.sidebar.selectbox("Choose Theme", ["Dark", "Light"], index=0)
