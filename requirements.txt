@@ -6,3 +6,4 @@ nltk
 tweepy
 wordcloud
 vaderSentiment
+NRCLex
