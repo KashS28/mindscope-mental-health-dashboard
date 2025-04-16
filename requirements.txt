@@ -19,7 +19,7 @@ hdbscan
 joblib
 wordcloud
 pyLDAvis
-prophet
 requests
 regex
 textblob
+prophet
